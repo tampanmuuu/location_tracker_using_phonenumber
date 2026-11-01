@@ -1,7 +1,7 @@
 import phonenumbers
 import opencage
 import folium
-number = "+8801974332349"
+number = "+6288704564348"
 from phonenumbers import geocoder
 pepnumber = phonenumbers.parse(number)
 location = geocoder.description_for_number(pepnumber, "en")
@@ -12,7 +12,7 @@ service_pro = phonenumbers.parse(number)
 print(carrier.name_for_number(service_pro, "en"))
 
 from opencage.geocoder import OpenCageGeocode
-key = 'f2410116f81f48178d14970d86ef4c5f'
+key = 'd654c8039f834cf9abb4efac2c3ca1f6'
 geocoder = OpenCageGeocode(key)
 query = str(location)
 results = geocoder.geocode(query)
